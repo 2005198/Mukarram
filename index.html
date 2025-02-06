@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Multiples</title>
+</head>
+<body>
+    <p>When you click the button, it will find the sum of all multiples of 3 or 5 below 1000.</p>
+    
+    <button onclick="doIt()">Press me!</button>
+
+    <script>
+        function doIt() {
+            let sum = 0;
+            for (let i = 0; i < 1000; i++) {
+                if (i % 3 === 0 || i % 5 === 0) {
+                    sum += i;
+                }
+            }
+            alert("The sum of all multiples of 3 or 5 below 1000 is: " + sum);
+        }
+    </script>
+</body>
+</html>
